@@ -124,7 +124,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\source\GameEngine\glm;C:\source\GameEngine\Libraries\GLFW\include;C:\source\GameEngine;C:\source\GameEngine\src\Components;C:\source\GameEngine\src\Systems;C:\VulkanSDK\1.2.148.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\CoreFramework;$(SolutionDir)\glm;$(SolutionDir)\Libraries\GLFW\include;$(SolutionDir);$(SolutionDir)\src\Components;$(SolutionDir)\src\Systems;C:\VulkanSDK\1.2.148.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -142,7 +142,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\source\GameEngine\glm;C:\source\GameEngine\Libraries\GLFW\include;C:\source\GameEngine;C:\source\GameEngine\src\Components;C:\source\GameEngine\src\Systems;C:\VulkanSDK\1.2.148.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\src\CoreFramework;$(SolutionDir)\glm;$(SolutionDir)\Libraries\GLFW\include;$(SolutionDir);$(SolutionDir)\src\Components;$(SolutionDir)\src\Systems;C:\VulkanSDK\1.2.148.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -155,26 +155,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\ComponentArray.h" />
-    <ClInclude Include="src\ComponentManager.h" />
+    <ClInclude Include="src\CoreFramework\ComponentArray.h" />
+    <ClInclude Include="src\CoreFramework\ComponentManager.h" />
     <ClInclude Include="src\Components\GravityComponent.h" />
     <ClInclude Include="src\Components\RigidBodyComponent.h" />
     <ClInclude Include="src\Components\TransformComponent.h" />
-    <ClInclude Include="src\ECSConstants.h" />
-    <ClInclude Include="src\EntityComponentSystemInterface.h" />
-    <ClInclude Include="src\EntityManager.h" />
-    <ClInclude Include="src\IComponentArray.h" />
-    <ClInclude Include="src\Math.h" />
-    <ClInclude Include="src\System.h" />
-    <ClInclude Include="src\SystemManager.h" />
+    <ClInclude Include="src\CoreFramework\ECSConstants.h" />
+    <ClInclude Include="src\CoreFramework\EntityComponentSystemInterface.h" />
+    <ClInclude Include="src\CoreFramework\EntityManager.h" />
+    <ClInclude Include="src\CoreFramework\IComponentArray.h" />
+    <ClInclude Include="src\CoreFramework\System.h" />
+    <ClInclude Include="src\CoreFramework\SystemManager.h" />
     <ClInclude Include="src\Systems\PhysicsSystem.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\ComponentManager.cpp" />
-    <ClCompile Include="src\EntityComponentSystemInterface.cpp" />
-    <ClCompile Include="src\EntityManager.cpp" />
+    <ClCompile Include="src\CoreFramework\ComponentManager.cpp" />
+    <ClCompile Include="src\CoreFramework\EntityComponentSystemInterface.cpp" />
+    <ClCompile Include="src\CoreFramework\EntityManager.cpp" />
     <ClCompile Include="src\GameEnginePrototype.cpp" />
-    <ClCompile Include="src\SystemManager.cpp" />
+    <ClCompile Include="src\CoreFramework\SystemManager.cpp" />
     <ClCompile Include="src\Systems\PhysicsSystem.cpp" />
   </ItemGroup>
   <ItemGroup>

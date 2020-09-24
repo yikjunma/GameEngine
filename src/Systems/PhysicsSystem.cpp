@@ -1,8 +1,8 @@
 #include "PhysicsSystem.h"
-#include "src/EntityComponentSystemInterface.h"
-#include "src/Components/RigidBodyComponent.h"
-#include "src/Components/GravityComponent.h"
-#include "src/Components/TransformComponent.h"
+#include "EntityComponentSystemInterface.h"
+#include "RigidBodyComponent.h"
+#include "GravityComponent.h"
+#include "TransformComponent.h"
 
 extern EntityComponentSystemInterface gCoordinator;
 
